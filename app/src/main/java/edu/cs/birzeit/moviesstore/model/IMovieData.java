@@ -5,5 +5,5 @@ import java.util.List;
 public interface IMovieData {
     List<Movie> getMovies(String cat);
 
-    List<String> getCategories();
+    String[] getGenre();
 }

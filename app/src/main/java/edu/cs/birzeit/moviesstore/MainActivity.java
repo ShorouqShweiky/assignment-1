@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         MovieFactory factory = new MovieFactory();
         IMovieData objMovie = factory.getModel();
 
-        List<String> cats = objMovie.getCategories();
+        String[] cats = objMovie.getGenre();
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, cats);
@@ -52,9 +52,11 @@ public class MainActivity extends AppCompatActivity {
 
         String str = "";
         for(Movie b:Movies){
-            str+=b.getTitle() + "\n";
+            str+=b.getTitle() + "\n" +b.getYear() + "\n"+b.getGenre() + "\n";
         }
         Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
 
+
+
     }
-}
+  }

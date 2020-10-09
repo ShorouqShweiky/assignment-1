@@ -36,13 +36,6 @@ public class Movie {
         this.genre = genre;
     }
 
-    public String getCategory() {
-        return category;
+
+
     }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-
-}

@@ -22,7 +22,7 @@ public class MovieData implements IMovieData {
 
         ArrayList<Movie> data = new ArrayList<>();
         for(Movie b : movies){
-            if(b.getCategory().equals(cat)){
+            if(b.getGenre().equals(cat)){
                 data.add(b);
             }
         }
@@ -30,12 +30,10 @@ public class MovieData implements IMovieData {
     }
 
     @Override
-    public List<String> getCategories() {
-        ArrayList<String> cats=new ArrayList<>();
-        cats.add("By Title or part of it");
-        cats.add("by year");
-        cats.add("by genre");
-        return cats;
+    public String[] getGenre() {
+        String[] genre = new String[]{"By title or part of it", "by year", "by genre"};
 
+        return genre;
     }
+
 }
