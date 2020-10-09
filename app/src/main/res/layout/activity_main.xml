@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_margin="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_movie"
+        android:text="welcome to movie data store app"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="casual"
+        android:background="#BCCADAE1"
+        android:textColor="#F44336"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Look for the movie you want "
+        android:textColor="#101010"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+       android:fontFamily="cursive"
+        android:textSize="20dp"
+
+        />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="#BCCADAE1"
+
+        />
+
+
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableStart="@drawable/ic_search"
+        android:inputType="text"
+        android:hint="Enter the tilte/year/genre"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnGetBooks"
+        android:layout_gravity="center"
+        android:background="#BCCADAE1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnSearchOnClick"
+        android:text="Search" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/bg"
+        android:layout_margin="10dp"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txtMessageres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:drawableStart="@drawable/ic_theaters"
+            android:inputType=""
+            android:hint="show result "
+            />
+
+</LinearLayout>
+</LinearLayout>
